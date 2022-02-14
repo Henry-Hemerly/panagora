@@ -1,0 +1,6 @@
+@use '../abstracts/' as abs;
+
+.globalGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+}

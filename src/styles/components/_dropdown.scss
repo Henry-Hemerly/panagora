@@ -1,0 +1,47 @@
+@use '../abstracts/' as *;
+
+.dropdown {
+    position: relative;
+    display: block;
+    margin-top: $gutter;
+}
+
+.dropdown-button {
+    background-color: $panagora-light-gray;
+    border: 2px solid $panagora-black;
+    width: 100%;
+    color: $panagora-black;
+    font-size: $paragraph;
+    padding: $gutter;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $panagora-light-gray;
+    min-width: 160px;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: $panagora-black;
+    padding: $gutter;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: $panagora-gray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: $panagora-light-gray;
+}

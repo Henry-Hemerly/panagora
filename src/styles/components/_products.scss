@@ -1,0 +1,30 @@
+@use '../abstracts/' as *;
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: calc(3 * $gutter-small);
+    margin-bottom: 5%;
+
+    @media screen and (min-width: $tablet-generic) {
+        margin: 0 5% 5% 5%;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: calc(3 * $gutter-small);
+    }
+
+    @media screen and (min-width: $small-screens) {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 7.5% 5% 7.5%;
+    }
+
+    @media screen and (min-width: $large-screens) {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1280px;
+        margin: 0 10% 5% 10%;
+        column-gap: calc(2 * $gutter);
+    }
+
+    @media screen and (min-width: $extra-large-screens) {
+        margin: 0 auto;
+    }
+}

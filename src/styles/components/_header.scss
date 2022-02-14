@@ -1,0 +1,11 @@
+@use '../abstracts/' as *;
+
+.header {
+    margin-top: calc(3 * $gutter);
+    margin-bottom: calc(2 * $gutter);
+
+    @media screen and (min-width: $tablet-generic) {
+        margin-bottom: calc(4 * $gutter);
+        background-color: unset;
+    }
+}

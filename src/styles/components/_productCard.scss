@@ -1,0 +1,30 @@
+@use '../abstracts/' as *;
+
+.productCard-details {
+    line-height: $line-height;
+    padding: 5%;
+    letter-spacing: -0.5px;
+    text-align: left;
+    a {
+        color: $panagora-black;
+        font-size: $paragraph;
+    }
+}
+
+.productCard-image {
+    width: 100%;
+}
+
+.productCard-name {
+    font-weight: $font-bold;
+}
+
+.productCard-price {
+    font-weight: $font-regular;
+}
+
+@media screen and (min-width: 480px) {
+    .productCard-details {
+        padding: 5% 0;
+    }
+}

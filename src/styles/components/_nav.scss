@@ -1,0 +1,21 @@
+@use '../abstracts/' as *;
+
+.navList {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: calc(2 * $gutter);
+    width: fit-content;
+    font-size: $paragraph;
+    font-weight: $font-bold;
+    letter-spacing: -0.5px;
+
+    @media screen and (min-width: $tablet-generic) {
+        margin-top: calc(3 * $gutter-small);
+    }
+}
+
+.navLink {
+    color: $panagora-black;
+    padding-bottom: 3px;
+}

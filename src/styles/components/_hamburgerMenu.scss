@@ -1,0 +1,44 @@
+@use '../abstracts/' as *;
+
+.hamburger {
+    position: fixed;
+    z-index: 2;
+    top: $gutter;
+    right: $gutter;
+    padding: calc($gutter / 2);
+    border: solid 1px $panagora-black;
+    background: $panagora-light-gray;
+    cursor: pointer;
+}
+
+.menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: $panagora-black;
+    color: $panagora-light-gray;
+    list-style: none;
+}
+
+.menuItem {
+    color: $panagora-light-gray;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.showMenu {
+    transform: translateY(0);
+    line-height: 28px;
+    text-align: right;
+    padding-right: $gutter;
+    padding-top: calc(5 * $gutter);
+}
+
+.closeIcon {
+    display: none;
+}

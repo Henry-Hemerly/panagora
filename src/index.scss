@@ -1,0 +1,21 @@
+@use './styles/abstracts' as a;
+@use './styles/components' as c;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    font-family: a.$font;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}

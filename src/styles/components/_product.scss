@@ -1,0 +1,71 @@
+@use '../abstracts/' as *;
+
+.product {
+    margin-bottom: 5%;
+}
+
+.product-content {
+    margin: 5%;
+    text-align: left;
+}
+
+.product-image {
+    width: 100vw;
+}
+
+.product-name {
+    font-weight: $font-bold;
+}
+
+.product-description {
+    line-height: $line-height;
+    letter-spacing: -0.5px;
+    font-weight: $font-light;
+    font-size: $paragraph;
+    margin-top: $gutter;
+    margin-bottom: calc(3 * $gutter);
+}
+
+.product-price {
+    font-weight: $font-bold;
+    p {
+        display: contents;
+    }
+}
+
+@media screen and (min-width: $tablet-generic) {
+    .product {
+        padding: 0 5%;
+    }
+
+    .product-image {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .product-content {
+        margin: 5% 0;
+    }
+}
+
+@media screen and (min-width: $small-screens) {
+    .product {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: calc(2 * $gutter);
+    }
+
+    .product-content {
+        margin: unset;
+    }
+
+    .product-name {
+        font-size: $heading3;
+    }
+}
+
+@media screen and (min-width: $large-screens) {
+    .product {
+        max-width: 1280px;
+    }
+}

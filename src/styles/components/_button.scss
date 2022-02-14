@@ -1,0 +1,24 @@
+@use '../abstracts/' as *;
+
+.button {
+    background-color: $panagora-black;
+    font-family: $font;
+    border: none;
+    color: $panagora-light-gray;
+    padding: 20px 45px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    font-size: $paragraph;
+    margin-top: $gutter;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $panagora-turquoise;
+    }
+
+    &:disabled {
+        background-color: $panagora-light-gray;
+        color: $panagora-gray;
+    }
+}
